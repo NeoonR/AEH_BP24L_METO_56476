@@ -1,6 +1,6 @@
 package pl.pp;
 
-public class myNinthAppProject {
+public class Warehouse {
     private String warehouseNumber;
     private int totalSpace;
     private int occupiedSpace;
@@ -8,8 +8,7 @@ public class myNinthAppProject {
     private String ownerEmail;
     private String ownerPhone;
 
-    // Constructor
-    public myNinthAppProject(String warehouseNumber, int totalSpace, String ownerName, String ownerEmail, String ownerPhone) {
+    public Warehouse(String warehouseNumber, int totalSpace, String ownerName, String ownerEmail, String ownerPhone) {
         this.warehouseNumber = warehouseNumber;
         this.totalSpace = totalSpace;
         this.ownerName = ownerName;
@@ -18,7 +17,6 @@ public class myNinthAppProject {
         this.occupiedSpace = 0;
     }
 
-    // Getters and Setters
     public String getWarehouseNumber() { return warehouseNumber; }
     public void setWarehouseNumber(String warehouseNumber) { this.warehouseNumber = warehouseNumber; }
 
@@ -33,7 +31,6 @@ public class myNinthAppProject {
     public String getOwnerPhone() { return ownerPhone; }
     public void setOwnerPhone(String ownerPhone) { this.ownerPhone = ownerPhone; }
 
-    // Core methods
     public void addGoods(int amount) {
         if (amount <= getAvailableSpace()) {
             occupiedSpace += amount;
