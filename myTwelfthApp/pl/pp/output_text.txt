@@ -1,0 +1,2 @@
+File: sample_text.txt
+Number of lines: 15
