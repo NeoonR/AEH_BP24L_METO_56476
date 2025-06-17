@@ -37,7 +37,7 @@ public class MySixthApp {
             System.out.println("Your score #1 is " + finalScore);
         }
 
-        System.out.println("Calculations and display of the result for values assigned in the application code (different than before)");
+        System.out.println("Calculations and display of the result for values assigned in the application code (different before)");
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
@@ -57,7 +57,7 @@ public class MySixthApp {
         calculateScore_arguments(true, 2500, 9, 250);
         calculateScore_arguments(gameOver, score, levelCompleted, bonus);
 
-        System.out.println("Calculations and display can be made independent from each other by adding a parameter that this method will return using return");
+        System.out.println("Calculations and display can be made independent each other by adding a parameter that this method will return using return");
         finalScore = calculateScore_argumentsReturn(gameOver, score, levelCompleted, bonus);
         System.out.println("Your score #5 is " + finalScore);
         */
